@@ -1,0 +1,20 @@
+[INFO] Start evaluating model: 'gpt-5-nano'
+   Threads: 5
+   Force re-evaluation: no
+   Scope: EP1
+   Checking 1 tasks for existing results...
+   1 new tasks to run. 0 existing tasks will be skipped.
+
+Evaluating gpt-5-nano:   0%|          | 0/1 [00:00<?, ?it/s]
+Evaluating gpt-5-nano: 100%|██████████| 1/1 [00:59<00:00, 59.73s/it]
+Evaluating gpt-5-nano: 100%|██████████| 1/1 [00:59<00:00, 59.73s/it]
+
+------------------------------------------------------
+[OK] Success: EP1-001 @ gpt-5-nano (elapsed: 60.20s)
+--- STDOUT: ---
+Evaluating agent in environment: ./TextWorld/TestWorld2/results/ulxEnv/EP1-001/gpt-5_2025-10-10_125652_10-30_1428_attempt3.ulx with model: gpt-5-nano
+------------------------------------------------------
+
+[INFO] Evaluation of 'gpt-5-nano' finished.
+   Total: 1 succeeded, 0 failed (out of 1 tasks).
+   Skipped: 0 tasks with existing results.

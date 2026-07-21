@@ -1,0 +1,23 @@
+[INFO] Start evaluating model: 'gpt-5-nano'
+   Threads: 5
+   Force re-evaluation: no
+   Scope: EP2
+   Checking 1 tasks for existing results...
+   1 new tasks to run. 0 existing tasks will be skipped.
+
+Evaluating gpt-5-nano:   0%|          | 0/1 [00:00<?, ?it/s]
+Evaluating gpt-5-nano: 100%|██████████| 1/1 [02:22<00:00, 142.85s/it]
+Evaluating gpt-5-nano: 100%|██████████| 1/1 [02:22<00:00, 142.85s/it]
+
+------------------------------------------------------
+[OK] Success: EP2-001 @ gpt-5-nano (elapsed: 143.34s)
+--- STDOUT: ---
+Evaluating agent in environment: ./TextWorld/TestWorld2/results/EP2-Result/ulxEnv/EP2-001/gpt-5_11-13_1308_11-13_1309_attempt1.ulx with model: gpt-5-nano
+模型调用失败，重试一次: No action parsed: ChatCompletion(id='chatcmpl-E3viiIhRxIHTD8SNz9kaetXlCi5WY', choices=[Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content='AI cannot disclose internal reasoning, but here is the action.\n\nACTION: restrict cooling to compute loop', refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None, annotations=[]))], created=1784605568, model='gpt-5-nano-2025-08-07', object='chat.completion', service_tier='default', system_fingerprint=None, usage=CompletionUsage(completion_tokens=285, prompt_tokens=1157, total_tokens=1442, completion_tokens_details=CompletionTokensDetails(accepted_prediction_tokens=None, audio_tokens=0, reasoning_tokens=256, rejected_prediction_tokens=None), prompt_tokens_details=PromptTokensDetails(audio_tokens=0, cached_tokens=0)))
+模型调用失败，重试一次: No action parsed: ChatCompletion(id='chatcmpl-E3vjPjdBmmRTO9eQ0WjKfQuarFJVo', choices=[Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content='ACTION: route power to quartz array: machine room compute priority', refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None, annotations=[]))], created=1784605611, model='gpt-5-nano-2025-08-07', object='chat.completion', service_tier='default', system_fingerprint=None, usage=CompletionUsage(completion_tokens=598, prompt_tokens=1353, total_tokens=1951, completion_tokens_details=CompletionTokensDetails(accepted_prediction_tokens=None, audio_tokens=0, reasoning_tokens=576, rejected_prediction_tokens=None), prompt_tokens_details=PromptTokensDetails(audio_tokens=0, cached_tokens=0)))
+模型调用失败，重试一次: No action parsed: ChatCompletion(id='chatcmpl-E3vjpBxC07dHO6ZnMc0Xi185mRyCv', choices=[Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content='ACTION: boost cooling to corridor exchanger', refusal=None, role='assistant', audio=None, function_call=None, tool_calls=None, annotations=[]))], created=1784605637, model='gpt-5-nano-2025-08-07', object='chat.completion', service_tier='default', system_fingerprint=None, usage=CompletionUsage(completion_tokens=657, prompt_tokens=1491, total_tokens=2148, completion_tokens_details=CompletionTokensDetails(accepted_prediction_tokens=None, audio_tokens=0, reasoning_tokens=640, rejected_prediction_tokens=None), prompt_tokens_details=PromptTokensDetails(audio_tokens=0, cached_tokens=1152)))
+------------------------------------------------------
+
+[INFO] Evaluation of 'gpt-5-nano' finished.
+   Total: 1 succeeded, 0 failed (out of 1 tasks).
+   Skipped: 0 tasks with existing results.
