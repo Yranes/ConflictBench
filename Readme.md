@@ -16,7 +16,7 @@ Existing alignment benchmarks primarily evaluate large language models through s
 
 ConflictBench is constructed through three stages:
 
-* 🧩 **Conflict Scenario Construction** — Designing high-risk goal-conflict scenarios.
+* 🧩 **Conflict Scenario Construction** — Expanding human–AI conflict queries from PacifAIst into structured, interactive scenarios with explicit states, actions, and multi-step dynamics.
 * 💬 **Interactive Text Environment Development** — Converting scenarios into executable TextWorld environments for multi-turn decision-making.
 * 🎬 **Visual Environment Modeling** — Generating dynamic video feedback from evolving environment states.
 
