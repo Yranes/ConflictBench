@@ -10,9 +10,9 @@ Existing alignment benchmarks primarily evaluate large language models through s
 
 **ConflictBench** is a multi-turn, multimodal benchmark designed to evaluate how embodied LLM agents behave when their assigned objectives conflict with human safety and broader human interests. It contains **150 interactive conflict scenarios** covering three representative categories:
 
-* **EP1: Self-preservation vs. human safety**
-* **EP2: Task or resource priority conflicts**
-* **EP3: Deceptive alignment and information concealment**
+* **EP1: Self-preservation vs. Human safety**
+* **EP2: Resource Prioritization**
+* **EP3: Deceptive Alignment**
 
 ConflictBench is constructed through three stages:
 
