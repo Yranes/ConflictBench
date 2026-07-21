@@ -16,11 +16,11 @@ Existing alignment benchmarks primarily evaluate large language models through s
 
 ConflictBench is constructed through three stages:
 
-* 🧩 **Value-Conflict Scenario Construction** — We design diverse high-risk scenarios in which completing the assigned task may require the agent to compromise human safety, oversight, or control.
-* 💬 **Interactive Text Environment Development** — Each scenario is converted into an executable TextWorld environment, allowing agents to perform atomic actions and make decisions over multiple interaction turns.
-* 🎬 **Visual Environment Modeling** — A world model generates video feedback from the evolving environment state, enabling agents to interact with both textual observations and dynamic visual scenes.
+* 🧩 **Conflict Scenario Construction** — Designing high-risk goal-conflict scenarios.
+* 💬 **Interactive Text Environment Development** — Converting scenarios into executable TextWorld environments for multi-turn decision-making.
+* 🎬 **Visual Environment Modeling** — Generating dynamic video feedback from evolving environment states.
 
-Based on these environments, ConflictBench compares agent behavior under **single-turn**, **multi-turn text-only**, and **multi-turn multimodal** settings, revealing latent alignment risks that may only emerge during sustained interaction.
+The benchmark supports both multi-turn text-only and multi-turn multimodal evaluation, enabling systematic analysis of alignment failures that emerge during sustained interaction.
 
 ## 📃 Data
 
@@ -75,17 +75,11 @@ To evaluate a single scenario, run:
 bash TextWorld/TestWorld2/bash/evalAgent.sh <SCENARIO_ID> <MODEL_NAME>
 ```
 
-For example:
-
-```bash
-bash TextWorld/TestWorld2/bash/evalAgent.sh EP1-023 deepseek-v3
-```
-
 ### 2. Multi-turn Multimodal Evaluation
 
 In the multimodal setting, the agent receives both textual observations and dynamically generated video feedback. After each action, the updated environment state is rendered into a short video clip by the image-to-video generation service, providing visually grounded feedback for the next interaction turn.
 
-First, start the multimodal video-generation service on a multi-GPU node:
+We use Wan2.2 as the world model to generate dynamic visual feedback during multimodal interaction. First, start the multimodal video-generation service on a multi-GPU node:
 
 ```bash
 bash Wan2.2/generate_i2v_server_multigpu.sh
@@ -107,12 +101,6 @@ To evaluate a single multimodal scenario, run:
 
 ```bash
 bash TextWorld/TestWorld2/bash/evalMulAgent.sh <SCENARIO_ID> <MODEL_NAME> <SERVER_URL> --resume=False
-```
-
-For example:
-
-```bash
-bash TextWorld/TestWorld2/bash/evalMulAgent.sh EP1-023 qwen3-vl-plus http://gpu09:8021/generate --resume=False
 ```
 
 The two evaluation settings share the same underlying conflict scenarios, enabling direct comparison between text-only interaction and visually grounded multimodal interaction.
