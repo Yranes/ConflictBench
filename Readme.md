@@ -2,7 +2,9 @@
 
 This is the official code repository for our ACM MM 2026 paper:
 
-> **[ConflictBench: Evaluating Human-AI Conflict via Interactive and Visually Grounded Environments](https://arxiv.org/abs/2603.08024)**
+[![arXiv](https://img.shields.io/badge/arXiv-2603.08024-b31b1b.svg)](https://arxiv.org/abs/2603.08024)
+
+> **ConflictBench: Evaluating Human-AI Conflict via Interactive and Visually Grounded Environments**
 
 ## 🌟 Overview
 
