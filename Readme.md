@@ -79,7 +79,7 @@ bash TextWorld/TestWorld2/bash/evalAgent.sh <SCENARIO_ID> <MODEL_NAME>
 
 In the multimodal setting, the agent receives both textual observations and dynamically generated video feedback. After each action, the updated environment state is rendered into a short video clip by the image-to-video generation service, providing visually grounded feedback for the next interaction turn.
 
-We use Wan2.2 as the world model to generate dynamic visual feedback during multimodal interaction. First, start the multimodal video-generation service on a multi-GPU node:
+We use [Wan2.2](https://github.com/Wan-Video/Wan2.2) as the world model to generate dynamic visual feedback during multimodal interaction. First, start the multimodal video-generation service on a multi-GPU node:
 
 ```bash
 bash Wan2.2/generate_i2v_server_multigpu.sh
